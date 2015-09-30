@@ -6,6 +6,7 @@ form do |f|
     f.input :body, as: :html_editor, label: 'Body'
     f.input :order, label: 'Order'
     f.input :is_published, lebel: 'Published'
+    f.input :featured, lebel: 'Featured'
     f.input :menu_display, label: 'Display In Menu'
     f.actions
   end
@@ -23,7 +24,7 @@ end
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :title, :body, :order, :is_published, :section_id, :menu_display
+permit_params :title, :body, :order, :is_published, :section_id, :menu_display, :featured
 #
 # or
 #
